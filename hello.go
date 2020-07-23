@@ -24,7 +24,7 @@ func main() {
 		}
 		fmt.Println("Successfully Opened %s", arg)
 		
-		processedJSON := message.messageJSON{}
+		processedJSON := message.MessageJSON{}
 		byteValue, _ := ioutil.ReadAll(jsonFile)
 		// process json into object
 		err = json.Unmarshal(byteValue, &processedJSON)
